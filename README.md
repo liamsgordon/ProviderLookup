@@ -25,8 +25,11 @@ steps:
 2) insert data into postgresql
  
  i) download 'Full Replacement Monthly NPI File' in https://download.cms.gov/nppes/NPI_Files.html
+ 
  ii) place file in data folder
+ 
  iii) open postgresql, create database call lookup, download any requirments for postgreql python connection
+ 
  iv) run Cross_sectional_data.py, and follow terminal instructions.
   **** this will take time ****
 
