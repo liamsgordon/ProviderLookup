@@ -1,6 +1,5 @@
 # ProviderLookup
 
-"""
 
 This is a Django web application which allows people to easily search for porviders based on name, location and practice. 
 
@@ -15,8 +14,11 @@ My application aims to be more user friendly.
 Requirements:
 
 python 3.7+
+
 Postgresql 13.2
+
 django 3.1.7
+
 
 steps:
 
