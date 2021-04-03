@@ -1,0 +1,1159 @@
+
+<!doctype html>
+<html lang="en">
+  {% load static %}
+  {% load tags %}
+  <head>
+
+
+    <title>
+      Provider Lookup
+    </title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.79.0">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel='icon' href="{% static 'doc.png' %}" type='image/x-icon'/>
+  </head>
+  <body>
+    
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href=""> Provider Lookup </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item active">
+          <a class="nav-link" aria-current="page" href="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.cms.gov/Regulations-and-Guidance/Administrative-Simplification/NationalProvIdentStand/DataDissemination">Downloads</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://npiregistry.cms.hhs.gov/registry/help-api">API</a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="https://npiregistry.cms.hhs.gov/registry/help-home">Help</a>
+        </li>
+      </ul>
+    
+      
+    </div>
+  </div>
+</nav>
+
+<main class="container">
+
+  <span style="line-height: 100px;">&nbsp;</span>
+
+<h3 class="text-center"> Search Provider Records </h3>
+
+<span style="line-height: 60px;">&nbsp;</span>
+
+<form method="GET" action="." class="form-group"> 
+
+  <div class="form-group row" class="d-grid gap-10">
+    <div class="col-md-6">
+      <label for="inputName4">First Name</label>
+      <input type="name" class="form-control" id="input4" name= "First_name_contains">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputName4">Last Name</label>
+      <input type="name" class="form-control" id="input4" name= "Last_name_contains">
+    </div>
+  </div>
+  <span style="line-height: 10px;">&nbsp;</span>
+  <div class="form-group row" class="d-grid gap-10">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">City</label>
+      <input type="text" class="form-control" id="inputCity" name= "City">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputState">Description</label>
+      <select id="inputState" class="form-control" name= "description">
+        <option selected>	 Prosthetics Case Management	</option>
+<option selected>	 Registered Record Administrator	</option>
+<option selected>	Acupuncturist	</option>
+<option selected>	Acute Care Clinical Nurse Specialist	</option>
+<option selected>	Acute Care Nurse Practitioner	</option>
+<option selected>	Addiction (Substance Use Disorder) Counselor	</option>
+<option selected>	Addiction (Substance Use Disorder) Psychologist 	</option>
+<option selected>	Addiction (Substance Use Disorder) Registered Nurse	</option>
+<option selected>	Addiction Medicine (Anesthesiology) Physician	</option>
+<option selected>	Addiction Medicine (Family Medicine) Physician	</option>
+<option selected>	Addiction Medicine (Internal Medicine) Physician	</option>
+<option selected>	Addiction Medicine (Preventive Medicine) Physician	</option>
+<option selected>	Addiction Medicine (Psychiatry & Neurology) Physician	</option>
+<option selected>	Addiction Psychiatry Physician	</option>
+<option selected>	Administrator Registered Nurse	</option>
+<option selected>	Adolescent and Children Mental Health Clinic/Center	</option>
+<option selected>	Adolescent Medicine (Family Medicine) Physician	</option>
+<option selected>	Adolescent Medicine (Internal Medicine) Physician	</option>
+<option selected>	Adult Care Home Facility	</option>
+<option selected>	Adult Companion	</option>
+<option selected>	Adult Congenital Heart Disease Physician	</option>
+<option selected>	Adult Day Care Clinic/Center	</option>
+<option selected>	Adult Development & Aging Psychologist	</option>
+<option selected>	Adult Health Clinical Nurse Specialist	</option>
+<option selected>	Adult Health Nurse Practitioner	</option>
+<option selected>	Adult Medicine Physician	</option>
+<option selected>	Adult Mental Health Clinic/Center	</option>
+<option selected>	Adult Psychiatric/Mental Health Clinical Nurse Specialist	</option>
+<option selected>	Adult Psychiatric/Mental Health Registered Nurse	</option>
+<option selected>	Adult Reconstructive Orthopaedic Surgery Physician	</option>
+<option selected>	Advanced Heart Failure and Transplant Cardiology Physician	</option>
+<option selected>	Advanced Practice Dental Therapist	</option>
+<option selected>	Advanced Practice Midwife	</option>
+<option selected>	Aerospace Medicine Physician	</option>
+<option selected>	Air Ambulance	</option>
+<option selected>	Air Carrier	</option>
+<option selected>	Allergy & Immunology (Internal Medicine) Physician	</option>
+<option selected>	Allergy & Immunology Physician	</option>
+<option selected>	Allergy Physician	</option>
+<option selected>	Alzheimer Center (Dementia Center)	</option>
+<option selected>	Ambulance	</option>
+<option selected>	Ambulatory Care Pharmacist	</option>
+<option selected>	Ambulatory Care Registered Nurse	</option>
+<option selected>	Ambulatory Family Planning Facility	</option>
+<option selected>	Ambulatory Fertility Facility	</option>
+<option selected>	Ambulatory Surgical Clinic/Center	</option>
+<option selected>	Ambulatory Women's Health Care Registered Nurse	</option>
+<option selected>	Amputee Clinic/Center	</option>
+<option selected>	Anaplastologist	</option>
+<option selected>	Anatomic Pathology & Clinical Pathology Physician	</option>
+<option selected>	Anatomic Pathology Physician	</option>
+<option selected>	Anesthesiologist Assistant	</option>
+<option selected>	Anesthesiology Physician	</option>
+<option selected>	Art Therapist	</option>
+<option selected>	Assistant Behavior Analyst	</option>
+<option selected>	Assistant Health Information Record Technician	</option>
+<option selected>	Assisted Living Facility	</option>
+<option selected>	Assisted Living Facility (Behavioral Disturbances)	</option>
+<option selected>	Assisted Living Facility (Mental Illness)	</option>
+<option selected>	Assistive Technology Practitioner Audiologist	</option>
+<option selected>	Assistive Technology Practitioner Rehabilitation Counselor	</option>
+<option selected>	Assistive Technology Supplier Audiologist	</option>
+<option selected>	Assistive Technology Supplier Rehabilitation Counselor	</option>
+<option selected>	Athletic Trainer	</option>
+<option selected>	Attendant Care Provider	</option>
+<option selected>	Audiologist	</option>
+<option selected>	Audiologist-Hearing Aid Fitter	</option>
+<option selected>	Audiology Assistant	</option>
+<option selected>	Augmentative Communication Clinic/Center	</option>
+<option selected>	Basic Emergency Medical Technician	</option>
+<option selected>	Behavior Technician	</option>
+<option selected>	Behavioral Analyst	</option>
+<option selected>	Behavioral Neurology & Neuropsychiatry Physician	</option>
+<option selected>	Biochemist	</option>
+<option selected>	Biomedical Engineer	</option>
+<option selected>	Biomedical Engineering Technician	</option>
+<option selected>	Biomedical Photographer	</option>
+<option selected>	Biostatiscian	</option>
+<option selected>	Birthing Clinic/Center	</option>
+<option selected>	Blind Rehabilitation Specialist/Technologist	</option>
+<option selected>	Blood Bank	</option>
+<option selected>	Blood Banking & Transfusion Medicine Physician	</option>
+<option selected>	Blood Banking Specialist/Technologist	</option>
+<option selected>	Body Imaging Physician	</option>
+<option selected>	Bone Densitometry Radiologic Technologist	</option>
+<option selected>	Brain Injury Medicine (Physical Medicine & Rehabilitation) Physician	</option>
+<option selected>	Brain Injury Medicine (Psychiatry & Neurology) Physician	</option>
+<option selected>	Bus	</option>
+<option selected>	Cardiac Rehabilitation Clinic/Center	</option>
+<option selected>	Cardiac Rehabilitation Registered Nurse	</option>
+<option selected>	Cardiac-Interventional Technology Radiologic Technologist	</option>
+<option selected>	Cardiology Technician	</option>
+<option selected>	Cardiopulmonary Physical Therapist	</option>
+<option selected>	Cardiovascular Disease Physician	</option>
+<option selected>	Cardiovascular Invasive Specialist/Technologist	</option>
+<option selected>	Cardiovascular Specialist/Technologist	</option>
+<option selected>	Cardiovascular-Interventional Technology Radiologic Technologist	</option>
+<option selected>	Case Management Agency	</option>
+<option selected>	Case Management Registered Nurse	</option>
+<option selected>	Case Manager/Care Coordinator	</option>
+<option selected>	Certified Registered Nurse Anesthetist	</option>
+<option selected>	Certified Respiratory Therapist	</option>
+<option selected>	Chemical Pathology Physician	</option>
+<option selected>	Chemistry Pathology Specialist/Technologist	</option>
+<option selected>	Child & Adolescent Psychiatric/Mental Health Clinical Nurse Specialist	</option>
+<option selected>	Child & Adolescent Psychiatric/Mental Health Registered Nurse	</option>
+<option selected>	Child & Adolescent Psychiatry Physician	</option>
+<option selected>	Child & Family Psychiatric/Mental Health Clinical Nurse Specialist	</option>
+<option selected>	Child Abuse Pediatrics Physician	</option>
+<option selected>	Child Intellectual and/or Developmental Disabilities Respite Care	</option>
+<option selected>	Child Mental Illness Respite Care	</option>
+<option selected>	Child Physical Disabilities Respite Care	</option>
+<option selected>	Children' s Chronic Disease Hospital	</option>
+<option selected>	Children's Hospital	</option>
+<option selected>	Children's Rehabilitation Hospital	</option>
+<option selected>	Children's Substance Abuse Rehabilitation Facility	</option>
+<option selected>	Chiropractor	</option>
+<option selected>	Chore Provider	</option>
+<option selected>	Chronic Care Clinical Nurse Specialist	</option>
+<option selected>	Chronic Disease Hospital	</option>
+<option selected>	Chronically Ill Psychiatric/Mental Health Clinical Nurse Specialist	</option>
+<option selected>	Clinic Pharmacy	</option>
+<option selected>	Clinic/Center	</option>
+<option selected>	Clinical & Laboratory Dermatological Immunology Physician	</option>
+<option selected>	Clinical & Laboratory Immunology (Allergy & Immunology) Physician	</option>
+<option selected>	Clinical & Laboratory Immunology (Internal Medicine) Physician	</option>
+<option selected>	Clinical Biochemical Genetics Physician	</option>
+<option selected>	Clinical Cardiac Electrophysiology Physician	</option>
+<option selected>	Clinical Child & Adolescent Psychologist	</option>
+<option selected>	Clinical Cytogenetics Physician	</option>
+<option selected>	Clinical Electrophysiology Physical Therapist	</option>
+<option selected>	Clinical Ethicist	</option>
+<option selected>	Clinical Exercise Physiologist	</option>
+<option selected>	Clinical Genetics (M.D.) Physician	</option>
+<option selected>	Clinical Informatics (Pathology) Physician	</option>
+<option selected>	Clinical Informatics Physician	</option>
+<option selected>	Clinical Laboratory Director (Non-physician)	</option>
+<option selected>	Clinical Medical Laboratory	</option>
+<option selected>	Clinical Molecular Genetics Physician	</option>
+<option selected>	Clinical Neurophysiology Physician	</option>
+<option selected>	Clinical Neuropsychologist	</option>
+<option selected>	Clinical Nurse Specialist	</option>
+<option selected>	Clinical Pathology Physician	</option>
+<option selected>	Clinical Pathology/Laboratory Medicine Physician	</option>
+<option selected>	Clinical Pharmacology Physician	</option>
+<option selected>	Clinical Psychologist	</option>
+<option selected>	Clinical Social Worker	</option>
+<option selected>	Cognitive & Behavioral Psychologist	</option>
+<option selected>	College Health Registered Nurse	</option>
+<option selected>	Colon & Rectal Surgery Physician	</option>
+<option selected>	Community Based Hospice Care Agency	</option>
+<option selected>	Community Health Clinic/Center	</option>
+<option selected>	Community Health Nurse Practitioner	</option>
+<option selected>	Community Health Registered Nurse	</option>
+<option selected>	Community Health Worker	</option>
+<option selected>	Community Health/Public Health Clinical Nurse Specialist	</option>
+<option selected>	Community Psychiatric/Mental Health Clinical Nurse Specialist	</option>
+<option selected>	Community/Behavioral Health Agency	</option>
+<option selected>	Community/Retail Pharmacy	</option>
+<option selected>	Compounding Pharmacy	</option>
+<option selected>	Comprehensive Outpatient Rehabilitation Facility (CORF)	</option>
+<option selected>	Computed Tomography Radiologic Technologist	</option>
+<option selected>	Contact Lens Fitter	</option>
+<option selected>	Contact Lens Technician/Technologist	</option>
+<option selected>	Continence Care Registered Nurse	</option>
+<option selected>	Continuing Education/Staff Development Registered Nurse	</option>
+<option selected>	Contractor	</option>
+<option selected>	Cornea and External Diseases Specialist Physician	</option>
+<option selected>	Corneal and Contact Management Optometrist	</option>
+<option selected>	Corporate Health Clinic/Center	</option>
+<option selected>	Counseling Psychologist	</option>
+<option selected>	Counselor	</option>
+<option selected>	Critical Access Hospital	</option>
+<option selected>	Critical Access Hospital Clinic/Center	</option>
+<option selected>	Critical Care Certified Respiratory Therapist	</option>
+<option selected>	Critical Care Medicine (Anesthesiology) Physician	</option>
+<option selected>	Critical Care Medicine (Internal Medicine) Physician	</option>
+<option selected>	Critical Care Medicine (Obstetrics & Gynecology) Physician	</option>
+<option selected>	Critical Care Medicine Clinical Nurse Specialist	</option>
+<option selected>	Critical Care Medicine Nurse Practitioner	</option>
+<option selected>	Critical Care Medicine Registered Nurse	</option>
+<option selected>	Critical Care Neonatal Nurse Practitioner	</option>
+<option selected>	Critical Care Pediatric Nurse Practitioner	</option>
+<option selected>	Critical Care Pharmacist	</option>
+<option selected>	Critical Care Registered Respiratory Therapist	</option>
+<option selected>	Custodial Care Facility	</option>
+<option selected>	Customized Equipment (DME)	</option>
+<option selected>	Cytopathology Physician	</option>
+<option selected>	Cytotechnology Specialist/Technologist	</option>
+<option selected>	Dance Therapist	</option>
+<option selected>	Darkroom Technician	</option>
+<option selected>	Day Training/Habilitation Specialist	</option>
+<option selected>	Deactivated - Christian Science Facility	</option>
+<option selected>	Deactivated - Christian Science Sanitorium	</option>
+<option selected>	Deactivated - Clinical Neuropsychologist	</option>
+<option selected>	Deactivated - Military Hospital	</option>
+<option selected>	Deactivated - Pharmacist	</option>
+<option selected>	Deactivated - Podiatrist	</option>
+<option selected>	Deactivated - Psychologist	</option>
+<option selected>	Deactivated - Psychologist Men & Masculinity	</option>
+<option selected>	Deactivated - Psychologist Psychotherapy	</option>
+<option selected>	Deactivated - Psychotherapy Women	</option>
+<option selected>	Dental Assistant	</option>
+<option selected>	Dental Clinic/Center	</option>
+<option selected>	Dental Hygienist	</option>
+<option selected>	Dental Laboratory	</option>
+<option selected>	Dental Laboratory Technician	</option>
+<option selected>	Dental Therapist	</option>
+<option selected>	Dentist	</option>
+<option selected>	Dentist Anesthesiologist	</option>
+<option selected>	Denturist	</option>
+<option selected>	Department of Veterans Affairs (VA) Pharmacy	</option>
+<option selected>	Dermatology Physician	</option>
+<option selected>	Dermatopathology (Pathology) Physician	</option>
+<option selected>	Dermatopathology Physician	</option>
+<option selected>	Developmental - Behavioral Pediatrics Physician	</option>
+<option selected>	Developmental Disabilities Clinic/Center	</option>
+<option selected>	Developmental Therapist	</option>
+<option selected>	Developmentally Disabled Services Day Training Agency	</option>
+<option selected>	Diabetes Educator Registered Nurse	</option>
+<option selected>	Diagnostic Neuroimaging (Psychiatry & Neurology) Physician	</option>
+<option selected>	Diagnostic Neuroimaging (Radiology) Physician	</option>
+<option selected>	Diagnostic Radiology Physician	</option>
+<option selected>	Diagnostic Ultrasound Physician	</option>
+<option selected>	Dialysis Equipment & Supplies (DME)	</option>
+<option selected>	Dietary Manager	</option>
+<option selected>	Diplomate Laboratory Management Specialist/Technologist	</option>
+<option selected>	Doula	</option>
+<option selected>	Drama Therapist	</option>
+<option selected>	Driver	</option>
+<option selected>	Driving and Community Mobility Occupational Therapist	</option>
+<option selected>	Driving and Community Mobility Occupational Therapy Assistant	</option>
+<option selected>	Durable Medical Equipment & Medical Supplies	</option>
+<option selected>	Early Intervention Provider Agency	</option>
+<option selected>	Educational Certified Respiratory Therapist	</option>
+<option selected>	Educational Registered Respiratory Therapist	</option>
+<option selected>	EEG Specialist/Technologist	</option>
+<option selected>	EEG Technician	</option>
+<option selected>	Electrodiagnostic Medicine Physician	</option>
+<option selected>	Electroneurodiagnostic Specialist/Technologist	</option>
+<option selected>	Emergency Care Certified Respiratory Therapist	</option>
+<option selected>	Emergency Care Clinic/Center	</option>
+<option selected>	Emergency Care Registered Respiratory Therapist	</option>
+<option selected>	Emergency Clinical Nurse Specialist	</option>
+<option selected>	Emergency Medical Services (Emergency Medicine) Physician	</option>
+<option selected>	Emergency Medicine Physician	</option>
+<option selected>	Emergency Registered Nurse	</option>
+<option selected>	Emergency Response System Companies	</option>
+<option selected>	Emotionally Disturbed Childrens' Residential Treatment Facility	</option>
+<option selected>	End-Stage Renal Disease (ESRD) Treatment Clinic/Center	</option>
+<option selected>	Endocrinology, Diabetes & Metabolism Physician	</option>
+<option selected>	Endodontist	</option>
+<option selected>	Endoscopy Clinic/Center	</option>
+<option selected>	Enterostomal Therapy Registered Nurse	</option>
+<option selected>	Environmental Modification Occupational Therapist	</option>
+<option selected>	Environmental Modification Occupational Therapy Assistant	</option>
+<option selected>	Epilepsy Hospital Unit	</option>
+<option selected>	Ergonomics Occupational Therapist	</option>
+<option selected>	Ergonomics Physical Therapist	</option>
+<option selected>	Ethics Clinical Nurse Specialist	</option>
+<option selected>	Exclusive Provider Organization	</option>
+<option selected>	Exercise & Sports Psychologist	</option>
+<option selected>	Eye Bank	</option>
+<option selected>	Eyewear Supplier	</option>
+<option selected>	Facial Plastic Surgery Physician	</option>
+<option selected>	Family Health Clinical Nurse Specialist	</option>
+<option selected>	Family Medicine Physician	</option>
+<option selected>	Family Nurse Practitioner	</option>
+<option selected>	Family Psychologist	</option>
+<option selected>	Federal Public Health Clinic/Center	</option>
+<option selected>	Federally Qualified Health Center (FQHC)	</option>
+<option selected>	Feeding, Eating & Swallowing Occupational Therapist	</option>
+<option selected>	Feeding, Eating & Swallowing Occupational Therapy Assistant	</option>
+<option selected>	Female Pelvic Medicine and Reconstructive Surgery (Obstetrics & Gynecology) Physician	</option>
+<option selected>	Female Pelvic Medicine and Reconstructive Surgery (Urology) Physician	</option>
+<option selected>	Flight Registered Nurse	</option>
+<option selected>	Foot & Ankle Surgery Podiatrist	</option>
+<option selected>	Foot Surgery Podiatrist	</option>
+<option selected>	Forensic Pathology Physician	</option>
+<option selected>	Forensic Psychiatry Physician	</option>
+<option selected>	Forensic Psychologist	</option>
+<option selected>	Foster Care Agency	</option>
+<option selected>	Funeral Director	</option>
+<option selected>	Gastroenterology Physician	</option>
+<option selected>	Gastroenterology Registered Nurse	</option>
+<option selected>	General Acute Care Hospital	</option>
+<option selected>	General Care Certified Respiratory Therapist	</option>
+<option selected>	General Care Registered Respiratory Therapist	</option>
+<option selected>	General Practice Dentistry	</option>
+<option selected>	General Practice Physician	</option>
+<option selected>	General Practice Registered Nurse	</option>
+<option selected>	Genetic Counselor (M.S.)	</option>
+<option selected>	Genetics Clinic/Center	</option>
+<option selected>	Geriatric Care Certified Respiratory Therapist	</option>
+<option selected>	Geriatric Care Registered Respiratory Therapist	</option>
+<option selected>	Geriatric Medicine (Family Medicine) Physician	</option>
+<option selected>	Geriatric Medicine (Internal Medicine) Physician	</option>
+<option selected>	Geriatric Pharmacist	</option>
+<option selected>	Geriatric Physical Therapist	</option>
+<option selected>	Geriatric Psychiatry Physician	</option>
+<option selected>	Gerontological Nutrition Registered Dietitian	</option>
+<option selected>	Gerontology Clinical Nurse Specialist	</option>
+<option selected>	Gerontology Nurse Practitioner	</option>
+<option selected>	Gerontology Occupational Therapist	</option>
+<option selected>	Gerontology Registered Nurse	</option>
+<option selected>	Geropsychiatric Psychiatric/Mental Health Clinical Nurse Specialist	</option>
+<option selected>	Glaucoma Specialist (Ophthalmology) Physician	</option>
+<option selected>	Graphics Designer	</option>
+<option selected>	Graphics Methods Specialist/Technologist	</option>
+<option selected>	Group Psychotherapy Psychologist	</option>
+<option selected>	Gynecologic Oncology Physician	</option>
+<option selected>	Gynecology Physician	</option>
+<option selected>	Hand Occupational Therapist	</option>
+<option selected>	Hand Physical Therapist	</option>
+<option selected>	Health & Wellness Coach	</option>
+<option selected>	Health Educator	</option>
+<option selected>	Health Information Specialist/Technologist	</option>
+<option selected>	Health Information Technician	</option>
+<option selected>	Health Maintenance Organization	</option>
+<option selected>	Health Psychologist	</option>
+<option selected>	Health Service Clinic/Center	</option>
+<option selected>	Health Service Psychologist	</option>
+<option selected>	Hearing  Aid Equipment	</option>
+<option selected>	Hearing and Speech Clinic/Center	</option>
+<option selected>	Hearing Instrument Specialist	</option>
+<option selected>	Hemapheresis Practitioner	</option>
+<option selected>	Hematology (Internal Medicine) Physician	</option>
+<option selected>	Hematology (Pathology) Physician	</option>
+<option selected>	Hematology & Oncology Physician	</option>
+<option selected>	Hematology Specialist/Technologist	</option>
+<option selected>	Hemodialysis Registered Nurse	</option>
+<option selected>	Hepatology Physician	</option>
+<option selected>	High-Risk Obstetric Registered Nurse	</option>
+<option selected>	Histology Specialist/Technologist	</option>
+<option selected>	Histology Technician	</option>
+<option selected>	Holistic Clinical Nurse Specialist	</option>
+<option selected>	Home Delivered Meals	</option>
+<option selected>	Home Health Agency	</option>
+<option selected>	Home Health Aide	</option>
+<option selected>	Home Health Certified Respiratory Therapist	</option>
+<option selected>	Home Health Clinical Nurse Specialist	</option>
+<option selected>	Home Health Registered Nurse	</option>
+<option selected>	Home Health Registered Respiratory Therapist	</option>
+<option selected>	Home Infusion Agency	</option>
+<option selected>	Home Infusion Therapy Pharmacy	</option>
+<option selected>	Home Modifications Contractor	</option>
+<option selected>	Homemaker	</option>
+<option selected>	Homeopath	</option>
+<option selected>	Hospice and Palliative Medicine (Anesthesiology) Physician	</option>
+<option selected>	Hospice and Palliative Medicine (Emergency Medicine) Physician	</option>
+<option selected>	Hospice and Palliative Medicine (Family Medicine) Physician	</option>
+<option selected>	Hospice and Palliative Medicine (Internal Medicine) Physician	</option>
+<option selected>	Hospice and Palliative Medicine (Obstetrics & Gynecology) Physician	</option>
+<option selected>	Hospice and Palliative Medicine (Physical Medicine & Rehabilitation) Physician	</option>
+<option selected>	Hospice and Palliative Medicine (Psychiatry & Neurology) Physician	</option>
+<option selected>	Hospice and Palliative Medicine (Radiology) Physician	</option>
+<option selected>	Hospice and Palliative Medicine (Surgery) Physician	</option>
+<option selected>	Hospice Registered Nurse	</option>
+<option selected>	Hospital Based Coding Specialist	</option>
+<option selected>	Hospitalist Physician	</option>
+<option selected>	Human Factors Occupational Therapist	</option>
+<option selected>	Human Factors Physical Therapist	</option>
+<option selected>	Hypertension Specialist Physician	</option>
+<option selected>	Immunology Pathology Specialist/Technologist	</option>
+<option selected>	Immunopathology Physician	</option>
+<option selected>	In Home Supportive Care Agency	</option>
+<option selected>	In Vivo & In Vitro Nuclear Medicine Physician	</option>
+<option selected>	Independent Duty Corpsman	</option>
+<option selected>	Independent Duty Medical Technicians	</option>
+<option selected>	Independent Medical Examiner Chiropractor	</option>
+<option selected>	Independent Medical Examiner Physician	</option>
+<option selected>	Indian Health Service/Tribal/Urban Indian Health (I/T/U) Pharmacy	</option>
+<option selected>	Infection Control Registered Nurse	</option>
+<option selected>	Infectious Disease Physician	</option>
+<option selected>	Informatics Clinical Nurse Specialist	</option>
+<option selected>	Infusion Therapy Clinic/Center	</option>
+<option selected>	Infusion Therapy Registered Nurse	</option>
+<option selected>	Inpatient Hospice	</option>
+<option selected>	Inpatient Obstetric Registered Nurse	</option>
+<option selected>	Institutional Pharmacy	</option>
+<option selected>	Intellectual & Developmental Disabilities Psychologist	</option>
+<option selected>	Intellectual and/or Developmental Disabilities Community Based Residential Treatment Facility	</option>
+<option selected>	Intellectual and/or Developmental Disabilities Residential Treatment Facility	</option>
+<option selected>	Intellectual Disabilities Intermediate Care Facility	</option>
+<option selected>	Intermediate Emergency Medical Technician	</option>
+<option selected>	Internal Medicine Physician	</option>
+<option selected>	Internist Chiropractor	</option>
+<option selected>	Interpreter	</option>
+<option selected>	Interventional Cardiology Physician	</option>
+<option selected>	Interventional Pain Medicine Physician	</option>
+<option selected>	Kinesiotherapist	</option>
+<option selected>	Laboratory Management Specialist/Technologist	</option>
+<option selected>	Lactation Consultant (Non-RN)	</option>
+<option selected>	Lactation Consultant (Registered Nurse)	</option>
+<option selected>	Land Ambulance	</option>
+<option selected>	Lay Midwife	</option>
+<option selected>	Legal Medicine	</option>
+<option selected>	Legal Medicine (M.D./D.O.) Physician	</option>
+<option selected>	Licensed Practical Nurse	</option>
+<option selected>	Licensed Psychiatric Technician	</option>
+<option selected>	Licensed Vocational Nurse	</option>
+<option selected>	Lithotripsy Clinic/Center	</option>
+<option selected>	Local Education Agency (LEA)	</option>
+<option selected>	Lodging Provider	</option>
+<option selected>	Long Term Care Hospital	</option>
+<option selected>	Long Term Care Pharmacy	</option>
+<option selected>	Long-Term Care Clinical Nurse Specialist	</option>
+<option selected>	Low Vision Occupational Therapist	</option>
+<option selected>	Low Vision Occupational Therapy Assistant	</option>
+<option selected>	Low Vision Rehabilitation Optometrist	</option>
+<option selected>	Low-Risk Neonatal Registered Nurse	</option>
+<option selected>	Magnetic Resonance Imaging (MRI) Clinic/Center	</option>
+<option selected>	Magnetic Resonance Imaging (MRI) Internal Medicine Physician	</option>
+<option selected>	Magnetic Resonance Imaging Radiologic Technologist	</option>
+<option selected>	Mail Order Pharmacy	</option>
+<option selected>	Mammography Clinic/Center	</option>
+<option selected>	Mammography Radiologic Technologist	</option>
+<option selected>	Managed Care Organization Pharmacy	</option>
+<option selected>	Marriage & Family Therapist	</option>
+<option selected>	Massage Therapist	</option>
+<option selected>	Mastectomy Fitter	</option>
+<option selected>	Maternal & Fetal Medicine Physician	</option>
+<option selected>	Maternal Newborn Registered Nurse	</option>
+<option selected>	Meals Provider	</option>
+<option selected>	Mechanotherapist	</option>
+<option selected>	Medical Art  Specialist/Technologist	</option>
+<option selected>	Medical Foods Supplier	</option>
+<option selected>	Medical Geneticist (PhD) Specialist/Technologist	</option>
+<option selected>	Medical Illustrator	</option>
+<option selected>	Medical Laboratory Technician	</option>
+<option selected>	Medical Microbiology Physician	</option>
+<option selected>	Medical Oncology Physician	</option>
+<option selected>	Medical Physician Assistant	</option>
+<option selected>	Medical Research Veterinarian	</option>
+<option selected>	Medical Specialty Clinic/Center	</option>
+<option selected>	Medical Technologist	</option>
+<option selected>	Medical Toxicology (Emergency Medicine) Physician	</option>
+<option selected>	Medical Toxicology (Preventive Medicine) Physician	</option>
+<option selected>	Medical-Surgical Clinical Nurse Specialist	</option>
+<option selected>	Medical-Surgical Registered Nurse	</option>
+<option selected>	Medically Fragile Infants and Children Day Care	</option>
+<option selected>	Medicare Defined Swing Bed Hospital Unit	</option>
+<option selected>	Mental Health Clinic/Center (Including Community Mental Health Center)	</option>
+<option selected>	Mental Health Counselor	</option>
+<option selected>	Mental Health Occupational Therapist	</option>
+<option selected>	Mental Illness Community Based Residential Treatment Facility	</option>
+<option selected>	Mental Illness Intermediate Care Facility	</option>
+<option selected>	Metabolic Nutrition Registered Dietitian	</option>
+<option selected>	Methadone Clinic	</option>
+<option selected>	Microbiology Specialist/Technologist	</option>
+<option selected>	Midwife	</option>
+<option selected>	Migrant Health Clinic/Center	</option>
+<option selected>	Military Ambulatory Procedure Visits Operational (Transportable) Clinic/Center	</option>
+<option selected>	Military and U.S. Coast Guard Ambulatory Procedure Clinic/Center	</option>
+<option selected>	Military Clinical Medical Laboratory	</option>
+<option selected>	Military General Acute Care Hospital	</option>
+<option selected>	Military Health Care Provider	</option>
+<option selected>	Military Hospital	</option>
+<option selected>	Military or U.S. Coast Guard Air Transport Ambulance	</option>
+<option selected>	Military or U.S. Coast Guard Ground Transport Ambulance	</option>
+<option selected>	Military or U.S. Coast Guard Water Transport Ambulance	</option>
+<option selected>	Military Outpatient Operational (Transportable) Component Clinic/Center	</option>
+<option selected>	Military/U.S. Coast Guard Outpatient Clinic/Center	</option>
+<option selected>	Military/U.S. Coast Guard Pharmacy	</option>
+<option selected>	Military/U.S. Coast Guard Transport, 	</option>
+<option selected>	Mobile Mammography Clinic/Center	</option>
+<option selected>	Mobile Radiology Clinic/Center	</option>
+<option selected>	MOHS-Micrographic Surgery Physician	</option>
+<option selected>	Molecular Genetic Pathology (Medical Genetics) Physician	</option>
+<option selected>	Molecular Genetic Pathology (Pathology) Physician	</option>
+<option selected>	Multi-Specialty Clinic/Center	</option>
+<option selected>	Multi-Specialty Group	</option>
+<option selected>	Music Therapist	</option>
+<option selected>	Naprapath	</option>
+<option selected>	Naturopath	</option>
+<option selected>	Neonatal Clinical Nurse Specialist	</option>
+<option selected>	Neonatal Intensive Care Registered Nurse	</option>
+<option selected>	Neonatal Nurse Practitioner	</option>
+<option selected>	Neonatal-Perinatal Medicine Physician	</option>
+<option selected>	Neonatal/Pediatric Certified Respiratory Therapist	</option>
+<option selected>	Neonatal/Pediatric Registered Respiratory Therapist	</option>
+<option selected>	Nephrology Physician	</option>
+<option selected>	Nephrology Registered Nurse	</option>
+<option selected>	Nephrology Specialist/Technologist	</option>
+<option selected>	Neuro-ophthalmology Physician	</option>
+<option selected>	Neurocritical Care Physician	</option>
+<option selected>	Neurodevelopmental Disabilities Physician Physician	</option>
+<option selected>	Neurological Surgery Physician	</option>
+<option selected>	Neurology Chiropractor	</option>
+<option selected>	Neurology Physical Therapist	</option>
+<option selected>	Neurology Physician	</option>
+<option selected>	Neurology with Special Qualifications in Child Neurology Physician	</option>
+<option selected>	Neuromuscular Medicine (Physical Medicine & Rehabilitation) Physician	</option>
+<option selected>	Neuromuscular Medicine (Psychiatry & Neurology) Physician	</option>
+<option selected>	Neuromusculoskeletal Medicine & OMM Physician	</option>
+<option selected>	Neuropathology Physician	</option>
+<option selected>	Neuroradiology Physician	</option>
+<option selected>	Neurorehabilitation Occupational Therapist	</option>
+<option selected>	Neuroscience Clinical Nurse Specialist	</option>
+<option selected>	Neuroscience Registered Nurse	</option>
+<option selected>	Non-emergency Medical Transport (VAN)	</option>
+<option selected>	Non-Pharmacy Dispensing Site	</option>
+<option selected>	Non-Surgical Family Planning Clinic/Center	</option>
+<option selected>	Nuclear Cardiology Physician	</option>
+<option selected>	Nuclear Imaging & Therapy Physician	</option>
+<option selected>	Nuclear Medicine Physician	</option>
+<option selected>	Nuclear Medicine Technology Radiologic Technologist	</option>
+<option selected>	Nuclear Pharmacist	</option>
+<option selected>	Nuclear Pharmacy	</option>
+<option selected>	Nuclear Radiology Physician	</option>
+<option selected>	Nurse Massage Therapist (NMT)	</option>
+<option selected>	Nurse Practitioner	</option>
+<option selected>	Nurse's Aide	</option>
+<option selected>	Nursing Care Agency	</option>
+<option selected>	Nursing Facility Supplies (DME)	</option>
+<option selected>	Nursing Facility/Intermediate Care Facility	</option>
+<option selected>	Nursing Home Administrator	</option>
+<option selected>	Nutrition Chiropractor	</option>
+<option selected>	Nutrition Education Nutritionist	</option>
+<option selected>	Nutrition Support Pharmacist	</option>
+<option selected>	Nutrition Support Registered Nurse	</option>
+<option selected>	Nutritionist	</option>
+<option selected>	Obesity and Weight Management Nutrition Registered Dietitian	</option>
+<option selected>	Obesity Medicine (Family Medicine) Physician	</option>
+<option selected>	Obesity Medicine (Internal Medicine) Physician	</option>
+<option selected>	Obesity Medicine (Obstetrics & Gynecology) Physician	</option>
+<option selected>	Obesity Medicine (Preventive Medicine) Physician	</option>
+<option selected>	Obesity Medicine (Psychiatry & Neurology) Physician	</option>
+<option selected>	Obstetrics & Gynecology Nurse Practitioner	</option>
+<option selected>	Obstetrics & Gynecology Physician	</option>
+<option selected>	Obstetrics Physician	</option>
+<option selected>	Occupational Health Chiropractor	</option>
+<option selected>	Occupational Health Clinical Nurse Specialist	</option>
+<option selected>	Occupational Health Nurse Practitioner	</option>
+<option selected>	Occupational Health Registered Nurse	</option>
+<option selected>	Occupational Medicine Clinic/Center	</option>
+<option selected>	Occupational Medicine Physician	</option>
+<option selected>	Occupational Therapist	</option>
+<option selected>	Occupational Therapy Assistant	</option>
+<option selected>	Occupational Vision Optometrist	</option>
+<option selected>	Ocularist	</option>
+<option selected>	Oncology Clinic/Center	</option>
+<option selected>	Oncology Clinical Nurse Specialist	</option>
+<option selected>	Oncology Nutrition Registered Dietitian	</option>
+<option selected>	Oncology Pharmacist	</option>
+<option selected>	Oncology Registered Nurse	</option>
+<option selected>	Operational (Transportable) Military General Acute Care Hospital	</option>
+<option selected>	Ophthalmic Assistant 	</option>
+<option selected>	Ophthalmic Plastic and Reconstructive Surgery Physician	</option>
+<option selected>	Ophthalmic Registered Nurse	</option>
+<option selected>	Ophthalmic Technician/Technologist	</option>
+<option selected>	Ophthalmologic Surgery Clinic/Center	</option>
+<option selected>	Ophthalmology Physician	</option>
+<option selected>	Optician	</option>
+<option selected>	Optometric Assistant Technician	</option>
+<option selected>	Optometric Technician	</option>
+<option selected>	Optometrist	</option>
+<option selected>	Oral & Maxillofacial Surgery (D.M.D.)	</option>
+<option selected>	Oral and Maxillofacial Pathology Dentist	</option>
+<option selected>	Oral and Maxillofacial Radiology Dentist	</option>
+<option selected>	Oral and Maxillofacial Surgery (Dentist)	</option>
+<option selected>	Oral and Maxillofacial Surgery Clinic/Center	</option>
+<option selected>	Oral Medicinist	</option>
+<option selected>	Organ Procurement Organization	</option>
+<option selected>	Orientation and Mobility Training Rehabilitation Counselor	</option>
+<option selected>	Orofacial Pain Dentist	</option>
+<option selected>	Orthodontics and Dentofacial Orthopedic Dentist	</option>
+<option selected>	Orthopaedic Foot and Ankle Surgery Physician	</option>
+<option selected>	Orthopaedic Hand Surgery Physician	</option>
+<option selected>	Orthopaedic Surgery of the Spine Physician	</option>
+<option selected>	Orthopaedic Surgery Physician	</option>
+<option selected>	Orthopaedic Trauma Physician	</option>
+<option selected>	Orthopedic Assistant	</option>
+<option selected>	Orthopedic Chiropractor	</option>
+<option selected>	Orthopedic Physical Therapist	</option>
+<option selected>	Orthopedic Registered Nurse	</option>
+<option selected>	Orthoptist	</option>
+<option selected>	Orthotic Fitter	</option>
+<option selected>	Orthotist	</option>
+<option selected>	Ostomy Care Registered Nurse	</option>
+<option selected>	Other Specialist/Technologist	</option>
+<option selected>	Other Technician	</option>
+<option selected>	Otolaryngic Allergy Physician	</option>
+<option selected>	Otolaryngology Physician	</option>
+<option selected>	Otolaryngology/Facial Plastic Surgery Physician	</option>
+<option selected>	Otology & Neurotology Physician	</option>
+<option selected>	Otorhinolaryngology & Head-Neck Registered Nurse	</option>
+<option selected>	Oxygen Equipment & Supplies (DME)	</option>
+<option selected>	PACE Provider Organization	</option>
+<option selected>	Pain Clinic/Center	</option>
+<option selected>	Pain Management Registered Nurse	</option>
+<option selected>	Pain Medicine (Anesthesiology) Physician	</option>
+<option selected>	Pain Medicine (Physical Medicine & Rehabilitation) Physician	</option>
+<option selected>	Pain Medicine (Psychiatry & Neurology) Physician	</option>
+<option selected>	Pain Medicine Physician	</option>
+<option selected>	Palliative/Hospice Certified Respiratory Therapist	</option>
+<option selected>	Palliative/Hospice Registered Respiratory Therapist	</option>
+<option selected>	Paramedic	</option>
+<option selected>	Parenteral & Enteral Nutrition Supplies (DME)	</option>
+<option selected>	Pastoral Counselor	</option>
+<option selected>	Pathology Specialist/Technologist	</option>
+<option selected>	Pathology Technician	</option>
+<option selected>	Patient Transport Certified Respiratory Therapist	</option>
+<option selected>	Patient Transport Registered Respiratory Therapist	</option>
+<option selected>	Pediatric Adolescent Medicine Physician	</option>
+<option selected>	Pediatric Allergy/Immunology Physician	</option>
+<option selected>	Pediatric Anesthesiology Physician	</option>
+<option selected>	Pediatric Cardiology Physician	</option>
+<option selected>	Pediatric Chiropractor	</option>
+<option selected>	Pediatric Clinical & Laboratory Immunology Physician	</option>
+<option selected>	Pediatric Clinical Nurse Specialist	</option>
+<option selected>	Pediatric Critical Care Medicine Physician	</option>
+<option selected>	Pediatric Critical Care Nutrition Registered Dietitian	</option>
+<option selected>	Pediatric Dentist	</option>
+<option selected>	Pediatric Dermatology Physician	</option>
+<option selected>	Pediatric Emergency Medicine (Emergency Medicine) Physician	</option>
+<option selected>	Pediatric Emergency Medicine (Pediatrics) Physician	</option>
+<option selected>	Pediatric Endocrinology Physician	</option>
+<option selected>	Pediatric Gastroenterology Physician	</option>
+<option selected>	Pediatric Hematology & Oncology Physician	</option>
+<option selected>	Pediatric Hospice and Palliative Medicine Physician	</option>
+<option selected>	Pediatric Infectious Diseases Physician	</option>
+<option selected>	Pediatric Medical Toxicology Physician	</option>
+<option selected>	Pediatric Nephrology Physician	</option>
+<option selected>	Pediatric Neurodevelopmental Disabilities Physician	</option>
+<option selected>	Pediatric Nurse Practitioner	</option>
+<option selected>	Pediatric Nutrition Registered Dietitian	</option>
+<option selected>	Pediatric Obesity Medicine Physician	</option>
+<option selected>	Pediatric Occupational Therapist	</option>
+<option selected>	Pediatric Oncology Clinical Nurse Specialist	</option>
+<option selected>	Pediatric Oncology Registered Nurse	</option>
+<option selected>	Pediatric Ophthalmology and Strabismus Specialist Physician Physician	</option>
+<option selected>	Pediatric Optometrist	</option>
+<option selected>	Pediatric Orthopaedic Surgery Physician	</option>
+<option selected>	Pediatric Otolaryngology Physician	</option>
+<option selected>	Pediatric Pathology Physician	</option>
+<option selected>	Pediatric Pharmacist	</option>
+<option selected>	Pediatric Physical Therapist	</option>
+<option selected>	Pediatric Pulmonology Physician	</option>
+<option selected>	Pediatric Radiology Physician	</option>
+<option selected>	Pediatric Registered Nurse	</option>
+<option selected>	Pediatric Rehabilitation Medicine Physician	</option>
+<option selected>	Pediatric Rheumatology Physician	</option>
+<option selected>	Pediatric Skilled Nursing Facility	</option>
+<option selected>	Pediatric Sleep Medicine Physician	</option>
+<option selected>	Pediatric Sports Medicine Physician	</option>
+<option selected>	Pediatric Surgery Physician	</option>
+<option selected>	Pediatric Transplant Hepatology Physician	</option>
+<option selected>	Pediatric Urology Physician	</option>
+<option selected>	Pediatrics Physician	</option>
+<option selected>	Pedorthist	</option>
+<option selected>	Peer Specialist	</option>
+<option selected>	Perfusionist	</option>
+<option selected>	Perinatal Clinical Nurse Specialist	</option>
+<option selected>	Perinatal Nurse Practitioner	</option>
+<option selected>	Perinatal Registered Nurse	</option>
+<option selected>	Periodontist	</option>
+<option selected>	Perioperative Clinical Nurse Specialist	</option>
+<option selected>	Peritoneal Dialysis Registered Nurse	</option>
+<option selected>	Personal Care Attendant	</option>
+<option selected>	Personal Emergency Response Attendant	</option>
+<option selected>	Ph.D. Medical Genetics	</option>
+<option selected>	Ph.D. Medical Genetics Physician	</option>
+<option selected>	Pharmacist	</option>
+<option selected>	Pharmacist Clinician (PhC)/ Clinical Pharmacy Specialist	</option>
+<option selected>	Pharmacotherapy Pharmacist	</option>
+<option selected>	Pharmacy	</option>
+<option selected>	Pharmacy Technician	</option>
+<option selected>	Phlebology Physician	</option>
+<option selected>	Phlebotomy Technician	</option>
+<option selected>	Physical Disabilities Residential Treatment Facility	</option>
+<option selected>	Physical Medicine & Rehabilitation Physician	</option>
+<option selected>	Physical Rehabilitation Occupational Therapist	</option>
+<option selected>	Physical Therapist	</option>
+<option selected>	Physical Therapy Assistant	</option>
+<option selected>	Physical Therapy Clinic/Center	</option>
+<option selected>	Physician Assistant	</option>
+<option selected>	Physician Office Based Coding Specialist	</option>
+<option selected>	Physiological Laboratory	</option>
+<option selected>	Plastic and Reconstructive Surgery Physician	</option>
+<option selected>	Plastic Surgery Physician	</option>
+<option selected>	Plastic Surgery Registered Nurse	</option>
+<option selected>	Plastic Surgery within the Head & Neck (Otolaryngology) Physician	</option>
+<option selected>	Plastic Surgery Within the Head and Neck (Plastic Surgery) Physician	</option>
+<option selected>	Podiatric Assistant	</option>
+<option selected>	Podiatric Clinic/Center	</option>
+<option selected>	Podiatrist	</option>
+<option selected>	Poetry Therapist	</option>
+<option selected>	Point of Service	</option>
+<option selected>	Portable X-ray and/or Other Portable Diagnostic Imaging Supplier	</option>
+<option selected>	Preferred Provider Organization	</option>
+<option selected>	Prescribing (Medical) Psychologist	</option>
+<option selected>	Prevention Professional	</option>
+<option selected>	Preventive Medicine/Occupational Environmental Medicine Physician	</option>
+<option selected>	Primary Care Clinic/Center	</option>
+<option selected>	Primary Care Nurse Practitioner	</option>
+<option selected>	Primary Podiatric Medicine Podiatrist	</option>
+<option selected>	Prison Health Clinic/Center	</option>
+<option selected>	Private Vehicle	</option>
+<option selected>	Procedural Dermatology Physician	</option>
+<option selected>	Professional Counselor	</option>
+<option selected>	Prosthetic/Orthotic Supplier	</option>
+<option selected>	Prosthetist	</option>
+<option selected>	Prosthodontist	</option>
+<option selected>	Psychiatric Hospital	</option>
+<option selected>	Psychiatric Hospital Unit	</option>
+<option selected>	Psychiatric Pharmacist	</option>
+<option selected>	Psychiatric Residential Treatment Facility	</option>
+<option selected>	Psychiatric/Mental Health Clinical Nurse Specialist	</option>
+<option selected>	Psychiatric/Mental Health Nurse Practitioner	</option>
+<option selected>	Psychiatric/Mental Health Registered Nurse	</option>
+<option selected>	Psychiatry Physician	</option>
+<option selected>	Psychoanalysis Psychologist	</option>
+<option selected>	Psychoanalyst	</option>
+<option selected>	Psychologist	</option>
+<option selected>	Psychosomatic Medicine Physician	</option>
+<option selected>	Public Health & General Preventive Medicine Physician	</option>
+<option selected>	Public Health Dentist	</option>
+<option selected>	Public Health or Welfare Agency	</option>
+<option selected>	Public Medicine Podiatrist	</option>
+<option selected>	Pulmonary Diagnostics Certified Respiratory Therapist	</option>
+<option selected>	Pulmonary Diagnostics Registered Respiratory Therapist	</option>
+<option selected>	Pulmonary Disease Physician	</option>
+<option selected>	Pulmonary Function Technologist	</option>
+<option selected>	Pulmonary Function Technologist Certified Respiratory Therapist	</option>
+<option selected>	Pulmonary Function Technologist Registered Respiratory Therapist	</option>
+<option selected>	Pulmonary Rehabilitation Certified Respiratory Therapist	</option>
+<option selected>	Pulmonary Rehabilitation Registered Respiratory Therapist	</option>
+<option selected>	Quality Management Radiologic Technologist	</option>
+<option selected>	Radiation Oncology Clinic/Center	</option>
+<option selected>	Radiation Oncology Physician	</option>
+<option selected>	Radiation Therapy Radiologic Technologist	</option>
+<option selected>	Radiography Radiologic Technologist	</option>
+<option selected>	Radiologic Technologist	</option>
+<option selected>	Radiological Physics Physician	</option>
+<option selected>	Radiology Chiropractor	</option>
+<option selected>	Radiology Clinic/Center	</option>
+<option selected>	Radiology Podiatrist	</option>
+<option selected>	Radiology Practitioner Assistant	</option>
+<option selected>	Recovery Care Clinic/Center	</option>
+<option selected>	Recreation Therapist	</option>
+<option selected>	Recreational Therapist Assistant	</option>
+<option selected>	Reflexologist	</option>
+<option selected>	Registered Dietetic Technician	</option>
+<option selected>	Registered Dietitian	</option>
+<option selected>	Registered Nurse	</option>
+<option selected>	Registered Nurse First Assistant	</option>
+<option selected>	Registered Respiratory Therapist	</option>
+<option selected>	Rehabilitation Chiropractor	</option>
+<option selected>	Rehabilitation Clinic/Center	</option>
+<option selected>	Rehabilitation Clinical Nurse Specialist	</option>
+<option selected>	Rehabilitation Counselor	</option>
+<option selected>	Rehabilitation Hospital	</option>
+<option selected>	Rehabilitation Hospital Unit	</option>
+<option selected>	Rehabilitation Practitioner	</option>
+<option selected>	Rehabilitation Psychologist	</option>
+<option selected>	Rehabilitation Registered Nurse	</option>
+<option selected>	Religious Nonmedical Health Care Institution	</option>
+<option selected>	Religious Nonmedical Nursing Personnel	</option>
+<option selected>	Religious Nonmedical Practitioner	</option>
+<option selected>	Renal Dialysis Technician	</option>
+<option selected>	Renal Nutrition Registered Dietitian	</option>
+<option selected>	Reproductive Endocrinology Physician	</option>
+<option selected>	Reproductive Endocrinology/Infertility Registered Nurse	</option>
+<option selected>	Research Clinic/Center	</option>
+<option selected>	Research Study Abstracter/Coder	</option>
+<option selected>	Research Study Specialist	</option>
+<option selected>	Respiratory/Developmental/Rehabilitative Specialist/Technologist	</option>
+<option selected>	Respite Care	</option>
+<option selected>	Respite Care Camp	</option>
+<option selected>	Retina Specialist (Ophthalmology) Physician	</option>
+<option selected>	Rheumatology Physician	</option>
+<option selected>	Rural Acute Care Hospital	</option>
+<option selected>	Rural Health Clinic/Center	</option>
+<option selected>	School Clinical Nurse Specialist	</option>
+<option selected>	School Counselor	</option>
+<option selected>	School Nurse Practitioner	</option>
+<option selected>	School Psychologist	</option>
+<option selected>	School Registered Nurse	</option>
+<option selected>	School Social Worker	</option>
+<option selected>	Secured Medical Transport (VAN)	</option>
+<option selected>	Single Specialty Group	</option>
+<option selected>	Skilled Nursing Facility	</option>
+<option selected>	Sleep Disorder Diagnostic Clinic/Center	</option>
+<option selected>	Sleep Medicine (Family Medicine) Physician	</option>
+<option selected>	Sleep Medicine (Internal Medicine) Physician	</option>
+<option selected>	Sleep Medicine (Otolaryngology) Physician	</option>
+<option selected>	Sleep Medicine (Psychiatry & Neurology) Physician	</option>
+<option selected>	Sleep Specialist (PhD)	</option>
+<option selected>	SNF/Subacute Care Certified Respiratory Therapist	</option>
+<option selected>	SNF/Subacute Care Registered Respiratory Therapist	</option>
+<option selected>	Social Worker	</option>
+<option selected>	Sonography Radiologic Technologist	</option>
+<option selected>	Sonography Specialist/Technologist	</option>
+<option selected>	Special Hospital	</option>
+<option selected>	Specialist	</option>
+<option selected>	Specialty Pharmacy	</option>
+<option selected>	Speech-Language Assistant	</option>
+<option selected>	Speech-Language Pathologist	</option>
+<option selected>	Speech/Language/Hearing Specialist/Technologist	</option>
+<option selected>	Spinal Cord Injury Medicine Physician	</option>
+<option selected>	Sports Dietetics Nutrition Registered Dietitian	</option>
+<option selected>	Sports Medicine (Emergency Medicine) Physician	</option>
+<option selected>	Sports Medicine (Family Medicine) Physician	</option>
+<option selected>	Sports Medicine (Internal Medicine) Physician	</option>
+<option selected>	Sports Medicine (Neuromusculoskeletal Medicine) Physician	</option>
+<option selected>	Sports Medicine (Orthopaedic Surgery) Physician	</option>
+<option selected>	Sports Medicine (Physical Medicine & Rehabilitation) Physician	</option>
+<option selected>	Sports Medicine (Preventive Medicine) Physician	</option>
+<option selected>	Sports Medicine (Psychiatry & Neurology) Physician	</option>
+<option selected>	Sports Medicine Podiatrist	</option>
+<option selected>	Sports Physical Therapist	</option>
+<option selected>	Sports Physician Chiropractor	</option>
+<option selected>	Sports Vision Optometrist	</option>
+<option selected>	State or Local Public Health Clinic/Center	</option>
+<option selected>	Student Health Clinic/Center	</option>
+<option selected>	Student in an Organized Health Care Education/Training Program	</option>
+<option selected>	Substance Abuse Rehabilitation Facility	</option>
+<option selected>	Substance Use Disorder Rehabilitation Clinic/Center	</option>
+<option selected>	Substance Use Disorder Rehabilitation Hospital Unit	</option>
+<option selected>	Supports Brokerage Agency	</option>
+<option selected>	Surgery of the Hand (Plastic Surgery) Physician	</option>
+<option selected>	Surgery of the Hand (Surgery) Physician	</option>
+<option selected>	Surgery Physician	</option>
+<option selected>	Surgical Assistant	</option>
+<option selected>	Surgical Critical Care Physician	</option>
+<option selected>	Surgical Oncology Physician	</option>
+<option selected>	Surgical Physician Assistant	</option>
+<option selected>	Surgical Technologist	</option>
+<option selected>	Taxi	</option>
+<option selected>	Technician	</option>
+<option selected>	Technician/Technologist	</option>
+<option selected>	Therapeutic Radiology Physician	</option>
+<option selected>	Thermography Chiropractor	</option>
+<option selected>	Thoracic Surgery (Cardiothoracic Vascular Surgery) Physician	</option>
+<option selected>	Train	</option>
+<option selected>	Transplant Hepatology Physician	</option>
+<option selected>	Transplant Surgery Physician	</option>
+<option selected>	Transplantation Clinical Nurse Specialist	</option>
+<option selected>	Transportation Broker	</option>
+<option selected>	Transportation Network Company	</option>
+<option selected>	Trauma Surgery Physician	</option>
+<option selected>	Undersea and Hyperbaric Medicine (Emergency Medicine) Physician	</option>
+<option selected>	Undersea and Hyperbaric Medicine (Preventive Medicine) Physician	</option>
+<option selected>	Urgent Care Clinic/Center	</option>
+<option selected>	Urology Physician	</option>
+<option selected>	Urology Registered Nurse	</option>
+<option selected>	Uveitis and Ocular Inflammatory Disease (Ophthalmology) Physician	</option>
+<option selected>	VA Clinic/Center	</option>
+<option selected>	Vascular & Interventional Radiology Physician	</option>
+<option selected>	Vascular Neurology Physician	</option>
+<option selected>	Vascular Sonography Radiologic Technologist	</option>
+<option selected>	Vascular Specialist/Technologist	</option>
+<option selected>	Vascular Surgery Physician	</option>
+<option selected>	Vascular-Interventional Technology Radiologic Technologist	</option>
+<option selected>	Vehicle Modifications Contractor	</option>
+<option selected>	Veterinarian	</option>
+<option selected>	Veterinary Technician	</option>
+<option selected>	Vision Therapy Optometrist	</option>
+<option selected>	Voluntary or Charitable Agency	</option>
+<option selected>	Water Ambulance	</option>
+<option selected>	Women's Health Clinical Nurse Specialist	</option>
+<option selected>	Women's Health Nurse Practitioner	</option>
+<option selected>	Women's Hospital	</option>
+<option selected>	Wound Care Registered Nurse	</option>
+        <option selected>Choose...</option>
+    </select>
+    </div>
+  </div>
+
+  <span style="line-height: 10px;">&nbsp;</span>
+
+  <div class="row" class="d-grid gap-10">
+    
+    <div class="form-group col-md-6">
+      <label for="inputState">State</label>
+      <select type="text" class="form-control" name= "State">
+        <option selected>Choose...</option>
+        <option value="AL">Alabama</option>
+        <option value="AK">Alaska</option>
+        <option value="AS">American Samoa</option>
+        <option value="AZ">Arizona</option>
+        <option value="AR">Arkansas</option>
+        <option value="AA">Armed Forces America</option>
+        <option value="AE">Armed Forces Europe /Canada / Middle East / Africa</option>
+        <option value="AP">Armed Forces Pacific</option>
+        <option value="CA">California</option>
+  <option value="CO">Colorado</option>
+  <option value="CT">Connecticut</option>
+  <option value="DE">Delaware</option>
+  <option value="DC">District of Columbia</option>
+  <option value="FM">Federated States of Micronesia</option>
+  <option value="FL">Florida</option>
+  <option value="GA">Georgia</option>
+  <option value="GU">Guam</option>
+  <option value="HI">Hawaii</option>
+  <option value="ID">Idaho</option>
+  <option value="IL">Illinois</option>
+  <option value="IN">Indiana</option>
+  <option value="IA">Iowa</option>
+  <option value="KS">Kansas</option>
+  <option value="KY">Kentucky</option>
+  <option value="LA">Louisiana</option>
+  <option value="ME">Maine</option>
+  <option value="MP">Mariana Islands, Northern</option>
+  <option value="MH">Marshall Islands</option>
+  <option value="MD">Maryland</option>
+  <option value="MA">Massachusetts</option>
+  <option value="MI">Michigan</option>
+  <option value="MN">Minnesota</option>
+  <option value="MS">Mississippi</option>
+  <option value="MO">Missouri</option>
+  <option value="MT">Montana</option>
+  <option value="NE">Nebraska</option>
+  <option value="NV">Nevada</option>
+  <option value="NH">New Hampshire</option>
+  <option value="NJ">New Jersey</option>
+  <option value="NM">New Mexico</option>
+  <option value="NY">New York</option>
+  <option value="NC">North Carolina</option>
+  <option value="ND">North Dakota</option>
+  <option value="OH">Ohio</option>
+  <option value="OK">Oklahoma</option>
+  <option value="OR">Oregon</option>
+  <option value="PA">Pennsylvania</option>
+  <option value="PR">Puerto Rico</option>
+  <option value="RI">Rhode Island</option>
+  <option value="SC">South Carolina</option>
+  <option value="SD">South Dakota</option>
+  <option value="TN">Tennessee</option>
+  <option value="TX">Texas</option>
+  <option value="UT">Utah</option>
+  <option value="VT">Vermont</option>
+  <option value="VI">Virgin islands</option>
+  <option value="VA">Virginia</option>
+  <option value="WA">Washington</option>
+  <option value="WV">West Virginia</option>
+  <option value="WI">Wisconsin</option>
+  <option value="WY">Wyoming</option>
+      </select>
+    </div>
+    <div class="col-md-6" >
+      <label for="inputZip">Zip</label>
+      <input type="text" class="form-control" id="inputZip" name= "zip_exact">
+    </div>
+  </div>
+
+  <span style="line-height: 35px;">&nbsp;</span>
+
+  <div class="row">
+    <small id="passwordHelpBlock" class="form-text text-muted"></small>
+  </div>
+
+  <div class="text-center">
+    <button type="Search" class="form-group btn btn-primary">Search</button>
+  </div>
+
+</form>
+
+
+
+<p class="font-italic text-center"> Search will filter results here </p>
+
+<span style="line-height: 35px;">&nbsp;</span>
+
+
+<div class="row" >
+  <ul>
+    <a class="list-group-item"> 
+      <div class="row" >
+    <div class="form-group col-md-2">
+      <span>   NPI</span>
+    </div>
+      <div class="form-group col-md-2">
+        <span> Name</span>
+      </div>
+      <div class="form-group col-md-2">
+        <span>Description</span> 
+      </div>
+      <div class="form-group col-md-4">
+        <span>Address</span> 
+      </div>
+      <div class="form-group col-md-2">
+        <span>Phone</span>
+      </div>
+    </div>
+    </a>
+
+
+
+   {% for provider in queryset %}
+    <a href="info/{{provider.npi}}" class="list-group-item list-group-item-action"> 
+      <div class="row" >
+      <div class="form-group col-md-2">
+        <span>{{ provider.npi }}</span>
+      </div>
+        <div class="form-group col-md-2">
+          <span>{{provider.first_name}} {{provider.last_name}}</span>
+        </div>
+        <div class="form-group col-md-2">
+          <span>{{provider.tax_name}}</span> 
+        </div>
+        <div class="form-group col-md-4">
+          <span>{{provider.address}}, {{ provider.city}}, {{ provider.state }}   {{ provider.postal_code }}</span> 
+        </div>
+        <div class="form-group col-md-2" >
+          <span>{{provider.telephone_number}}</span>
+        </div>
+      </div>
+    </a>
+   {% endfor %}
+  </ul>
+
+
+  {% if not check %}
+  <span style="line-height: 35px;">&nbsp;</span>
+  <h3 class= "text-center">Search too large, add more details</h3>
+  <span style="line-height: 15px;">&nbsp;</span>
+
+  {% endif %}
+
+  <span style="line-height: 30px;">&nbsp;</span>
+
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+    {% if queryset.has_previous %}
+        <li class="page-item">
+        <a class="page-link" href="{% my_url queryset.previous_page_number 'page' request.GET.urlencode %}">Previous</a>
+      </li>
+    {% else %}
+        <li class="page-item disabled">
+        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+      </li>
+    {% endif %}
+
+    {% if queryset.number|add:'-4' > 1 %}
+        <li class="page-item"><a class="page-link" href="{% my_url queryset.number|add:'-5' 'page' request.GET.urlencode %}">&hellip;</a></li>
+    {% endif %}
+
+    {% for i in queryset.paginator.page_range %}
+        {% if queryset.number == i %}
+            <li class="page-item active" aria-current="page">
+          <span class="page-link">
+            {{ i }}
+            <span class="sr-only">(current)</span>
+          </span>
+        </li>
+        {% elif i > queryset.number|add:'-5' and i < queryset.number|add:'5' %}
+             <li class="page-item"><a class="page-link" href="{% my_url i 'page' request.GET.urlencode %}">{{ i }}</a></li>
+        {% endif %}
+    {% endfor %}
+
+    {% if queryset.paginator.num_pages > queryset.number|add:'4' %}
+       <li class="page-item"><a class="page-link" href="{% my_url queryset.number|add:'5' 'page' request.GET.urlencode %}">&hellip;</a></li>
+    {% endif %}
+
+    {% if queryset.has_next %}
+        <li class="page-item">
+        <a class="page-link" href="{% my_url queryset.next_page_number 'page' request.GET.urlencode %}">Next</a>
+      </li>
+    {% else %}
+        <li class="page-item disabled">
+        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Next</a>
+      </li>
+    {% endif %}
+  </ul>
+</nav>
+  
+  </div>
+
+
+</main><!-- /.container -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+      
+
+  </body>
+</html>
