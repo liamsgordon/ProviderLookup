@@ -44,3 +44,10 @@ code in terminal:
   pip install Django
   python manage.py runserver
   
+  
+
+
+![Screen Shot 2021-04-03 at 4 59 02 PM](https://user-images.githubusercontent.com/66263339/113491451-e7d26100-949e-11eb-94be-c8c367785714.png)
+
+
+![Screen Shot 2021-04-03 at 4 58 57 PM](https://user-images.githubusercontent.com/66263339/113491442-ddb06280-949e-11eb-8efd-3b0bec940d14.png)
