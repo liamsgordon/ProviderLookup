@@ -3,16 +3,14 @@
 """
 
 This is a Django web application which allows people to easily search for porviders based on name, location and practice. 
-This web application is based on the the NPPES NPI search database here:
+
+This application is based on the the NPPES NPI search database here:
 
 https://npiregistry.cms.hhs.gov/
 
-My applicatio aims to be more user friendly, for someone who does not know what an NPI or a taxonomy code is.
-
-"""
+My application aims to be more user friendly.
 
 
-"""
 
 Requirements:
 
@@ -41,6 +39,3 @@ code in terminal:
   pip install Django
   python manage.py runserver
   
-
-
-"""
